@@ -4,7 +4,7 @@ description: >-
   I am a postdoctoral researcher at the University of Jyväskylä, Finland working on Drive-in-lab to understand the visual aspects of driving.
 email: aaron.a.khodami@jyu.fi
 url: "https://aaronkhodami.github.io"
-baseurl: "/aaronkhodami.github.io" # Project site repo name
+baseurl: "" # User site — no baseurl needed
 
 # Site Appearance
 # Choose one: times, ubuntu, roboto
