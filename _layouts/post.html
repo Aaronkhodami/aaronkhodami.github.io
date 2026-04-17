@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    {% if page.hero_image %}
+    <header class="post-header hero-header" style="background-image: url('{{ page.hero_image }}');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="post-title" itemprop="headline">{{ page.title | escape }}</h1>
+            {% if page.subtitle %}
+            <p class="post-subtitle" itemprop="description">{{ page.subtitle }}</p>
+            {% endif %}
+            <p class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B
+                    %-d, %Y" }}</time>
+                {% assign author_name = page.author | default: site.data.site.author.name %}
+                {% if author_name %}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ author_name }}</span>
+                </span>
+                {% endif %}
+            </p>
+            {% if page.tags %}
+            <div class="post-tags post-tags--pipe">
+                {% for tag in page.tags %}
+                <a href="{{ '/blog/' | relative_url }}?tag={{ tag | url_encode }}" class="post-tag-link">{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </header>
+    {% else %}
+    <header class="post-header">
+        <h1 class="post-title" itemprop="headline">{{ page.title | escape }}</h1>
+        {% if page.subtitle %}
+        <p class="post-subtitle" itemprop="description">{{ page.subtitle }}</p>
+        {% endif %}
+        <p class="post-meta" style="margin-bottom: 20px; font-size: 0.95rem; opacity: 0.7;">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d,
+                %Y" }}</time>
+            {% assign author_name = page.author | default: site.data.site.author.name %}
+            {% if author_name %}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ author_name }}</span>
+            </span>
+            {% endif %}
+        </p>
+        {% if page.tags %}
+        <div class="post-tags post-tags--pipe" style="margin-bottom: 20px;">
+            {% for tag in page.tags %}
+            <a href="{{ '/blog/' | relative_url }}?tag={{ tag | url_encode }}" class="post-tag-link">{{ tag }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 30px 0;">
+
+        {% if page.excerpt %}
+        <p class="post-brief"
+            style="font-size: 1.1rem; color: var(--secondary-text); margin-bottom: 30px; font-style: italic;">
+            <strong>In Brief:</strong> {{ page.excerpt | strip_html }}
+        </p>
+        {% endif %}
+    </header>
+    {% endif %}
+
+    <div class="post-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+
+    {% if site.related_posts.size > 0 %}
+    <div class="related-posts">
+        <h3>Related Posts</h3>
+        <ul class="related-posts-list">
+            {% for post in site.related_posts limit:3 %}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+        <a href="{{ '/blog/' | relative_url }}" class="button secondary">← Back to Blog</a>
+    </div>
+</article>

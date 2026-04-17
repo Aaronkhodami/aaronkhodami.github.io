@@ -1,0 +1,35 @@
+title: Your Name
+email: your-email@domain.com
+description: >-
+  Short site description goes here.
+baseurl: "/Academic-web-with-blog" # Project site repo name
+url: "https://aaronkhodami.github.io"
+twitter_username: your_handle
+github_username: your_handle
+
+# Note: Content settings have been moved to _data/site.yml
+# Please edit _data/site.yml to change author info, social links, etc.
+
+# Author Settings (Moved to _data/site.yml)
+# author:
+#   name: Your Name
+#   title: Your Title
+#   photo: myPhoto.jpg # Place this image in assets/images/
+#   bio: >-
+#     Brief bio goes here. Mention your research focus, expertise, or interests.
+
+# Social Links (Moved to _data/site.yml)
+# social:
+#   email: your-email@domain.com
+#   linkedin: https://www.linkedin.com/in/username
+#   x_twitter: https://x.com/username
+#   google_scholar: https://scholar.google.com/citations?user=Example
+#   researchgate: https://www.researchgate.net/profile/username
+#   orcid: https://orcid.org/0000-0000-0000-0000
+#   website: https://YOUR_USERNAME.github.io
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

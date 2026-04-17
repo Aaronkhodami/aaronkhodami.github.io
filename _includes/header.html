@@ -1,0 +1,51 @@
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <div class="site-branding">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" aria-label="Go to homepage">{{ site.data.site.title | escape }}</a>
+    </div>
+
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <div class="menu-wrapper" id="main-menu">
+        <ul class="menu" role="menubar">
+          <li role="none"><a class="page-link" href="{{ "/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.home | default: "Home" }}</a></li>
+          <li role="none"><a class="page-link" href="{{ "/about/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.about | default: "About" }}</a></li>
+          <li role="none"><a class="page-link" href="{{ "/research/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.research | default: "Research" }}</a></li>
+          <li role="none"><a class="page-link" href="{{ "/publications/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.publications | default: "Publications" }}</a></li>
+          <li role="none"><a class="page-link" href="{{ "/blog/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.blog | default: "Blog" }}</a></li>
+          {% if site.data.site.author.cv and site.data.site.author.cv != "" %}
+          <li role="none"><a class="page-link" href="{{ site.data.site.author.cv | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Download CV (opens in new tab)" role="menuitem"><i class="fas fa-file-download" aria-hidden="true"></i> {{ site.data.site.navigation.cv | default: "CV" }}</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark and light theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </div>
+  
+  <!-- Mobile menu overlay -->
+  <div class="menu-overlay" aria-hidden="true"></div>
+</header>
+

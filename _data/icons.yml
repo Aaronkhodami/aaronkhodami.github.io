@@ -1,0 +1,11 @@
+# Mapping of tool names (lowercase) to specific icon filenames
+# If a tool is not listed here, the system will default to 'toolname.png'
+jatos: jatos.svg
+julia: julia.svg
+html: html.png
+javascript: javascript.png
+matlab: matlab.png
+python: python.png
+r: r.png
+spss: spss.png
+jasp: jasp.png

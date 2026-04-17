@@ -1,0 +1,32 @@
+
+- title: "Sample Journal Article Title"
+  type: "Journal Paper"
+  authors: "**Author, A.***, & Collaborator, B."
+  journal: "Journal Name, 2026"
+  abstract: "Short abstract describing the study in neutral terms."
+  doi: "10.0000/example.2026.001"
+  pdf: "assets/uploads/paper1.pdf"
+
+- title: "Sample Preprint Title"
+  type: "Pre-print"
+  authors: "Author, A., Coauthor, C., & Collaborator, D."
+  journal: "Preprint Server (Submitted), 2025"
+  abstract: "Short abstract describing the preprint in neutral terms."
+  doi: "10.0000/example.2025.123"
+  pdf: "" # Empty to test inactive button
+
+- title: "Sample Conference Presentation Title"
+  type: "Conference Presentation"
+  authors: "Author, A., & Collaborator, B."
+  journal: "Conference Name, 2024"
+  abstract: "Short abstract describing the conference presentation."
+  doi: ""
+  pdf: "poster_sample.pdf" # Assumes local file
+
+- title: "Sample Invited Talk Title"
+  type: "Talk"
+  authors: "Author, A."
+  journal: "Invited Talk at Institution, 2023"
+  abstract: "Short abstract describing the invited talk."
+  doi: ""
+  pdf: "https://slideshare.net/example" # External link

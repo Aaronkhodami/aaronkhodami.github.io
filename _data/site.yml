@@ -1,0 +1,46 @@
+# General Site Settings
+title: Aaron Khodami
+description: >-
+  I am a postdoctoral researcher at the University of Jyväskylä, Finland working on Drive-in-lab to understand the visual aspects of driving.
+email: aaron.a.khodami@jyu.fi
+url: "https://aaronkhodami.github.io"
+baseurl: "/aaronkhodami.github.io" # Project site repo name
+
+# Site Appearance
+# Choose one: times, ubuntu, roboto
+appearance:
+  font: ubuntu
+
+# Navigation Labels
+# Change these to rename menu items without editing templates.
+navigation:
+  home: Home
+  about: About
+  research: Research
+  publications: Publications
+  blog: Blog
+  cv: My CV
+
+# Author Settings
+author:
+  name: Aaron Khodami
+  title: Postdoctoral Researcher at University of Jyväskylä, Finland
+  photo: myPhoto.jpg # Place this image in assets/images/
+  bio: >-
+    I am a postdoctoral researcher at the University of Jyväskylä, Finland working on Drive-in-lab to understand the visual aspects of driving.
+  cv: "assets/uploads/cv.pdf" # Replace with your actual CV file path
+
+# Social Links (Leave empty if not using)
+social:
+  email: aaron.a.khodami@jyu.fi
+  linkedin: https://www.linkedin.com/in/aaronkhodami/
+  x_twitter: https://x.com/aaronkhodami
+  google_scholar: https://scholar.google.com/citations?user=WCqPnS4AAAAJ&hl=en
+  researchgate: https://www.researchgate.net/profile/Aaron-Khodami
+  orcid: https://orcid.org/0000-0003-0130-7752
+  website: https://www.khodami.info
+
+# GitHub Repository (used for version & update date in footer)
+github:
+  username: aaronkhodami
+  repo: aaronkhodami.github.io

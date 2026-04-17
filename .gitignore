@@ -1,0 +1,6 @@
+*.bat
+_site/
+.jekyll-cache/
+.sass-cache/
+.github/
+run-local.bat

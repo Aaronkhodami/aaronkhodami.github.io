@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% assign site_font = site.data.site.appearance.font | default: "roboto" %}
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    
+    <!-- Enhanced SEO and Performance Meta Tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    
+    <!-- Enhanced SEO with Jekyll SEO plugin -->
+    {%- seo -%}
+    
+    <!-- Open Graph / Social Media Enhancement -->
+    {% if page.image %}
+        <meta property="og:image" content="{{ page.image | absolute_url }}">
+    {% elsif site.data.site.author.photo %}
+        <meta property="og:image" content="{{ "/assets/images/" | append: site.data.site.author.photo | absolute_url }}">
+    {% endif %}
+    
+    <!-- Enhanced Favicon Support -->
+    <link rel="icon" type="image/gif" href="{{ "/assets/images/favicon.gif" | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ "/assets/images/favicon.gif" | relative_url }}">
+    
+    <!-- Performance Optimizations -->
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="{{ "/assets/css/style.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"></noscript>
+    
+    <!-- Font Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {% case site_font %}
+    {% when "ubuntu" %}
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></noscript>
+    {% when "roboto" %}
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"></noscript>
+    {% endcase %}
+    
+    <!-- FontAwesome Icon Optimization -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
+    
+    <!-- Feed Meta -->
+    {%- feed_meta -%}
+    
+    <!-- Enhanced Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["Person", "Researcher"],
+        "name": "{{ site.data.site.title | default: site.title }}",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        {% if site.data.site.author.bio %}"description": "{{ site.data.site.author.bio | strip_html | truncatewords: 30 }}",{% endif %}
+        {% if site.data.site.author.email %}"email": "{{ site.data.site.author.email }}",{% endif %}
+        "sameAs": [
+            {% if site.data.site.author.linkedin %}"{{ site.data.site.author.linkedin }}",{% endif %}
+            {% if site.data.site.author.google_scholar %}"{{ site.data.site.author.google_scholar }}",{% endif %}
+            {% if site.data.site.author.researchgate %}"{{ site.data.site.author.researchgate }}",{% endif %}
+            {% if site.data.site.author.x_twitter %}"{{ site.data.site.author.x_twitter }}",{% endif %}
+            {% if site.data.site.author.github %}"{{ site.data.site.author.github }}"{% endif %}
+        ],
+        "jobTitle": "Researcher",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Research Institution"
+        }
+    }
+    </script>
+    <script>
+        // Check for saved theme preference or system preference immediately
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+</head>
+
+<body data-site-font="{{ site_font }}">
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
+    {%- include footer.html -%}
+    <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
+</body>
+
+</html>

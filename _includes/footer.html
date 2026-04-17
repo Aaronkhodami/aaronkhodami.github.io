@@ -1,0 +1,93 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-content footer-content--compact">
+
+            <div class="footer-social">
+                <div class="social-links-icons">
+                    {% if site.data.site.social.email %}
+                    <a href="mailto:{{ site.data.site.social.email }}" aria-label="Email" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.data.site.social.linkedin %}
+                    <a href="{{ site.data.site.social.linkedin }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.data.site.social.x_twitter %}
+                    <a href="{{ site.data.site.social.x_twitter }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="X (Twitter)" title="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.data.site.social.google_scholar %}
+                    <a href="{{ site.data.site.social.google_scholar }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="Google Scholar" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.data.site.social.researchgate %}
+                    <a href="{{ site.data.site.social.researchgate }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="ResearchGate" title="ResearchGate">
+                        <i class="fab fa-researchgate"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.data.site.social.orcid %}
+                    <a href="{{ site.data.site.social.orcid }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="ORCID" title="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+                    {% endif %}
+
+                    {% if site.data.site.social.website %}
+                    <a href="{{ site.data.site.social.website }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="Website" title="Personal Website">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="copy footer-copy">
+                &copy; {{ "now" | date: "%Y" }} {{ site.data.site.title }}. All rights reserved. Built with Jekyll.
+            </div>
+
+            {% if site.data.site.github.username and site.data.site.github.repo %}
+            <div id="site-version-info" class="footer-version"></div>
+            <script>
+            (function() {
+                var owner = "{{ site.data.site.github.username }}";
+                var repo = "{{ site.data.site.github.repo }}";
+                var el = document.getElementById('site-version-info');
+                if (!el) return;
+
+                var cacheKey = 'gh_version_' + owner + '_' + repo;
+                var cached = sessionStorage.getItem(cacheKey);
+                if (cached) {
+                    try { var data = JSON.parse(cached); el.textContent = data.text; return; } catch(e) {}
+                }
+
+                var api = 'https://api.github.com/repos/' + owner + '/' + repo;
+                fetch(api + '/commits?per_page=1').then(function(r) { return r.json(); })
+                .then(function(commits) {
+                    if (Array.isArray(commits) && commits.length > 0 && commits[0].commit) {
+                        var sha = commits[0].sha.substring(0, 7);
+                        var date = new Date(commits[0].commit.committer.date);
+                        var dateStr = date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+                        var text = 'Version ' + sha + ' \u00B7 Updated ' + dateStr;
+                        el.textContent = text;
+                        sessionStorage.setItem(cacheKey, JSON.stringify({ text: text }));
+                    }
+                }).catch(function() {});
+            })();
+            </script>
+            {% endif %}
+        </div>
+    </div>
+</footer>

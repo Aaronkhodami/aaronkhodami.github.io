@@ -1,0 +1,57 @@
+tools:
+  - Python
+  - R
+  - MATLAB
+  - JASP
+  - HTML
+  - JavaScript
+  - JATOS
+  - SPSS
+education:
+  - degree: Ph.D. With Distinction in Psychology
+    university: "University of Padua, Italy"
+    logo: "unipd.png" # e.g. university_logo.png
+    url: "dpg.unipd.it"  # e.g. https://university.edu
+    year: "2026"
+    details: |
+      Dissertation: "Temporal Mechanisms and Dynamics in Visual Impairment Adaptation and Rehabilitation"<br>
+      Advisors: Prof. Luca Battaglini
+  - degree: Visiting Ph.D. Researcher
+    university: "Ludwig Maximilian University of Munich, Germany"
+    year: "April 2025 - November 2025"
+    logo: "lmu.png"
+    details: |
+      Visit: Grammar Scene Lab led by prof. Melissa Võ<br>
+  
+  - degree: Remote Researcher and collaborator
+    university: "Visual attention Lab, Harvard Medical University, Professor Jeremy Wolfe"
+    year: "May 2024 - Present"
+    logo: "harvard.png"
+    details: |
+      Collaborating on a project investigating the role of visual attention in everyday life and also remote lab member.
+  - degree: M.Sc. in Cognitive Neuroscience
+    university: "Ural Federal University, Russia"
+    logo: "urfu.jpg"
+    url: "https://www.urfu.ru"
+    year: "2021"
+    details: |
+      2019, International Olympiad Winner, Entered to the program with tuition fee waiver and stipend.
+
+experience:
+  - position: "Postdoctoral Researcher"
+    institution: "Cognitive Science, Department of Information Technology, University of Jyväskylä, Finland"
+    logo: "jyu.png" # e.g. company_logo.png
+    url: "https://www.jyu.fi/en/people/aaron-khodami"
+    duration: "March 2026 - Present"
+    description: "Drive-in-lab project: Investigating the visual aspects of driving using a combination of behavioral experiments, eye-tracking, and computational modeling to understand how drivers allocate visual attention and process information in complex driving environments."
+  - position: "PhD Fellow Researcher"
+    institution: "University of Padua, Italy"
+    logo: "unipd.png"
+    url: "https://www.unipd.it/en"
+    duration: "November 2021 - March 2026"
+    description: "Marie-Skłodowska-Curie Actions (MSCA) Individual Fellowship: Conducted research on temporal mechanisms and dynamics in visual impairment adaptation and rehabilitation, including behavioral experiments, computational modeling, and neuroimaging studies to understand how individuals adapt to visual impairments and develop effective rehabilitation strategies."
+
+contact:
+  office: |
+    Room C526.1, 5th Floor, Agora Building, University of Jyväskylä, Finland
+  map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4146.536689816492!2d25.731100227778136!3d62.23084902873511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4685741ef2b0614d%3A0xef7b93348f0cfeb9!2sAgora!5e1!3m2!1sen!2sfi!4v1776002248967!5m2!1sen!2sfi"
