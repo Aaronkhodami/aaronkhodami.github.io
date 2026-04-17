@@ -3,7 +3,7 @@
  * Provides offline capabilities and performance optimizations
  */
 
-const CACHE_NAME = 'academic-website-v1';
+const CACHE_NAME = 'academic-website-v2';
 const STATIC_CACHE_URLS = [
   '/',
   '/assets/css/style.css',
