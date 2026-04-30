@@ -1,11 +1,11 @@
 title: Aaron Khodami
-email: your-email@domain.com
+email: aaron.a.khodami@jyu.fi
 description: >-
-  Short site description goes here.
+  Aaron Khodami, PhD
 baseurl: "" # User site — no baseurl needed
 url: "https://aaronkhodami.github.io"
-twitter_username: your_handle
-github_username: your_handle
+twitter_username: aaronkhodami
+github_username: aaronkhodami
 
 # Note: Content settings have been moved to _data/site.yml
 # Please edit _data/site.yml to change author info, social links, etc.
