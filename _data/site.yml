@@ -24,6 +24,14 @@ navigation:
 tools:
   - name: BibTeX Generator
     url: /bibtex-generator/
+  - name: ZotGit
+    url: https://github.com/Aaronkhodami/ZotGit
+  - name: Etformat
+    url:  https://khodami.info/etformat/intro.html
+  - name: Diffeomorphic
+    url:  https://pypi.org/project/diffeomorphic/
+  - name: RefCatch
+    url:  https://pypi.org/project/refcatch/
 
 # Author Settings
 author:
