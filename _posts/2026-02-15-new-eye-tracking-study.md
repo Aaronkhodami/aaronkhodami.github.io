@@ -1,25 +1,30 @@
 ---
 layout: post
-title: "New Study Published"
-date: 2026-02-09 10:00:00 +0100
+title: "Introducing ZotGit"
+date: 2026-03-26 10:00:00 +0100
 categories: updates
-tags: [News, Publication]
-excerpt: "We are pleased to announce our latest study has been published in a peer-reviewed journal."
+tags: [News, Zotero, Open-Source, GitHub]
+excerpt: "ZotGit is an open-source Zotero plugin for clean, automated, GitHub-backed attachment management."
 ---
 
-We are pleased to announce our latest study has been published in a peer-reviewed journal. This work advances our understanding of the topic and opens new directions for future research.
+Excited to share **ZotGit** - an open-source Zotero plugin I built to make attachment management clean, automated, and GitHub-backed.
 
-### Key Findings
+If you use Zotero heavily, you know how quickly PDF workflows can become messy, and how fast shared storage can fill up. ZotGit was designed to simplify that entire experience and keep your library easier to manage across devices.
 
-1.  Key finding one summarized in a single sentence.
-2.  Key finding two summarized in a single sentence.
-3.  Key finding three summarized in a single sentence.
+### What ZotGit does
 
-![Eye Tracking Heatmap](https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80)
-*Example figure caption for your study.*
+- Automatically move or copy imported attachments into a custom directory.
+- Auto-delete linked local files when they are removed in Zotero.
+- Attach the latest modified file from a folder to a Zotero item.
+- Optional Remote PDF Mode for GitHub-backed, on-demand recall.
 
-### Future Directions
+### Why this matters
 
-We are now extending this work to new datasets and applications.
+ZotGit offers a practical way to synchronize files across multiple devices without worrying about storage limitations. By leveraging a GitHub repository, users can keep files in sync while maintaining a clean local setup.
 
-[Read the full paper here](#)
+It also optimizes local storage by using a cache workflow: files are synchronized and can be removed locally when Zotero closes, then recalled when needed for reading, editing, or highlighting.
+
+![ZotGit plugin preview](/assets/images/zotgit.jpg)
+*ZotGit in action: clean attachment handling with GitHub-backed recall.*
+
+[Explore ZotGit on GitHub](https://github.com/Aaronkhodami/ZotGit)
