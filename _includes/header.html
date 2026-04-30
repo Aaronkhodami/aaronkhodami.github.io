@@ -18,8 +18,20 @@
           <li role="none"><a class="page-link" href="{{ "/research/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.research | default: "Research" }}</a></li>
           <li role="none"><a class="page-link" href="{{ "/publications/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.publications | default: "Publications" }}</a></li>
           <li role="none"><a class="page-link" href="{{ "/blog/" | relative_url }}" role="menuitem">{{ site.data.site.navigation.blog | default: "Blog" }}</a></li>
-          {% if site.data.site.author.cv and site.data.site.author.cv != "" %}
-          <li role="none"><a class="page-link" href="{{ site.data.site.author.cv | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Download CV (opens in new tab)" role="menuitem"><i class="fas fa-file-download" aria-hidden="true"></i> {{ site.data.site.navigation.cv | default: "CV" }}</a></li>
+          {% if site.data.site.tools and site.data.site.tools.size > 0 %}
+          <li role="none" class="has-submenu">
+            <button class="page-link submenu-toggle" type="button" aria-haspopup="true">
+              {{ site.data.site.navigation.tools | default: "Tools" }}
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul class="submenu" role="menu" aria-label="Tools submenu">
+              {% for tool in site.data.site.tools %}
+              <li role="none">
+                <a class="page-link" href="{{ tool.url | relative_url }}" role="menuitem">{{ tool.name }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
           {% endif %}
         </ul>
       </div>

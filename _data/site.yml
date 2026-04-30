@@ -19,7 +19,11 @@ navigation:
   research: Research
   publications: Publications
   blog: Blog
-  cv: My CV
+  tools: Tools
+
+tools:
+  - name: BibTeX Generator
+    url: /bibtex-generator/
 
 # Author Settings
 author:

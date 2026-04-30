@@ -199,6 +199,68 @@ img {
   gap: 18px;
 }
 
+.menu > li {
+  position: relative;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.submenu-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.submenu-toggle i {
+  font-size: 0.75rem;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 220px;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-md);
+  z-index: 1100;
+}
+
+.has-submenu:hover > .submenu,
+.has-submenu:focus-within > .submenu {
+  display: block;
+}
+
+.submenu li {
+  border-bottom: 0;
+  padding: 0;
+}
+
+.submenu .page-link {
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.submenu .page-link:hover,
+.submenu .page-link:focus-visible {
+  background: var(--border-color);
+}
+
+.submenu .page-link::after {
+  display: none;
+}
+
 .page-link {
   color: var(--secondary-text);
   font-weight: 500;
@@ -1343,6 +1405,33 @@ img {
     display: block;
     width: 100%;
     padding: 5px 0;
+  }
+
+  .submenu-toggle {
+    color: var(--secondary-text);
+    justify-content: space-between;
+  }
+
+  .has-submenu .submenu {
+    display: block;
+    position: static;
+    min-width: 0;
+    margin-top: 6px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .has-submenu .submenu li {
+    border-bottom: 0;
+    padding: 6px 0 6px 12px;
+  }
+
+  .has-submenu .submenu .page-link {
+    font-size: 1rem;
+    padding: 4px 0;
   }
 
   /* Hamburger Animation */
