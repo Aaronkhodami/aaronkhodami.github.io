@@ -19,6 +19,6 @@ Following constructive user feedback, I addressed the caching issue related to h
 ![ZotGit plugin preview](/assets/images/zotgit.jpg)
 *ZotGit update v0.0.30 with improved caching and sync.*
 
-The update is available at [ZotGit](https://lnkd.in/dVZp5xtT).
+The update is available at [ZotGit](https://github.com/Aaronkhodami/ZotGit).
 
 Existing users will receive an update notification in Zotero shortly. As always, feedback is welcome.
