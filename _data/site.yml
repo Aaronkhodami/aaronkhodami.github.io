@@ -33,6 +33,8 @@ tools:
     url:  https://pypi.org/project/diffeomorphic/
   - name: RefCatch
     url:  https://pypi.org/project/refcatch/
+  - name: CamDist
+    url: https://github.com/Aaronkhodami/CamDist
 
 # Author Settings
 author:
