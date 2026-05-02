@@ -4,8 +4,8 @@
 
             <div class="footer-social">
                 <div class="social-links-icons">
-                    {% if site.data.site.social.email %}
-                    <a href="mailto:{{ site.data.site.social.email }}" aria-label="Email" title="Email">
+                    {% if site.data.site.social.email_user_reversed and site.data.site.social.email_domain_reversed %}
+                    <a href="#" class="js-obfuscated-email" data-email-user-reversed="{{ site.data.site.social.email_user_reversed }}" data-email-domain-reversed="{{ site.data.site.social.email_domain_reversed }}" aria-label="Email" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                     {% endif %}

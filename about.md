@@ -127,7 +127,13 @@ permalink: /about/
     <div class="research-item" style="text-align: center; display: flex; flex-direction: column; justify-content: center;">
       <h3>Get in Touch</h3>
       <p>
-        <strong>Email:</strong> <a href="mailto:{{ site.data.site.social.email }}">{{ site.data.site.social.email }}</a><br>
+        <strong>Email:</strong>
+        <a
+          href="#"
+          class="js-obfuscated-email"
+          data-email-user-reversed="{{ site.data.site.social.email_user_reversed }}"
+          data-email-domain-reversed="{{ site.data.site.social.email_domain_reversed }}"
+        >[enable JavaScript]</a><br>
         <strong>Office:</strong><br>
         {{ site.data.about.contact.office }}
       </p>

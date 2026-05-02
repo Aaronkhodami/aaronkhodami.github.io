@@ -313,6 +313,30 @@ class TemplateBulbManager {
     }
 }
 
+class EmailObfuscationManager {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        const links = document.querySelectorAll('.js-obfuscated-email');
+        links.forEach((link) => {
+            const userReversed = link.getAttribute('data-email-user-reversed') || '';
+            const domainReversed = link.getAttribute('data-email-domain-reversed') || '';
+
+            if (!userReversed || !domainReversed) return;
+
+            const email = `${this.reverseString(userReversed)}@${this.reverseString(domainReversed)}`;
+            link.href = `mailto:${email}`;
+            link.textContent = email;
+        });
+    }
+
+    reverseString(value) {
+        return value.split('').reverse().join('');
+    }
+}
+
 // Main application initialization
 class AcademicWebsite {
     constructor() {
@@ -335,6 +359,7 @@ class AcademicWebsite {
         this.animationManager = new AnimationManager();
         this.performanceManager = new PerformanceManager();
         this.templateBulbManager = new TemplateBulbManager();
+        this.emailObfuscationManager = new EmailObfuscationManager();
         
         // Register service worker for enhanced performance
         this.registerServiceWorker();

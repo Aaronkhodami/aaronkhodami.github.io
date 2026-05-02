@@ -2,7 +2,8 @@
 title: Aaron Khodami
 description: >-
   I am a postdoctoral researcher at the University of Jyväskylä, Finland working on Drive-in-lab to understand the visual aspects of driving.
-email: aaron.a.khodami@jyu.fi
+email_user_reversed: imadohk.a.noraa
+email_domain_reversed: if.uyj
 url: "https://aaronkhodami.github.io"
 baseurl: "" # User site — no baseurl needed
 
@@ -44,7 +45,8 @@ author:
 
 # Social Links (Leave empty if not using)
 social:
-  email: aaron.a.khodami@jyu.fi
+  email_user_reversed: imadohk.a.noraa
+  email_domain_reversed: if.uyj
   linkedin: https://www.linkedin.com/in/aaronkhodami/
   x_twitter: https://x.com/aaronkhodami
   google_scholar: https://scholar.google.com/citations?user=WCqPnS4AAAAJ&hl=en

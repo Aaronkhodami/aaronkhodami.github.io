@@ -61,7 +61,6 @@
         "name": "{{ site.data.site.title | default: site.title }}",
         "url": "{{ site.url }}{{ site.baseurl }}",
         {% if site.data.site.author.bio %}"description": "{{ site.data.site.author.bio | strip_html | truncatewords: 30 }}",{% endif %}
-        {% if site.data.site.author.email %}"email": "{{ site.data.site.author.email }}",{% endif %}
         "sameAs": [
             {% if site.data.site.author.linkedin %}"{{ site.data.site.author.linkedin }}",{% endif %}
             {% if site.data.site.author.google_scholar %}"{{ site.data.site.author.google_scholar }}",{% endif %}
