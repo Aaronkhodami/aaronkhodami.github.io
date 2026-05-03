@@ -2,8 +2,8 @@ title: Aaron Khodami
 email: ""
 description: >-
   Aaron Khodami, PhD
-baseurl: "" # User site — no baseurl needed
-url: "https://aaronkhodami.github.io"
+baseurl: "" # Custom domain at root
+url: "https://aaronkhodami.org"
 twitter_username: aaronkhodami
 github_username: aaronkhodami
 
