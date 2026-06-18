@@ -15,7 +15,7 @@ I am very happy to see this work reach publication, and I hope it can contribute
 
 Many thanks to my supervisor **Luca Battaglini** for his support, guidance, and trust throughout this work.
 
-Read more at: [Nature Eye](https://www.nature.com/eye)
+Paper will be soon added here after production, Read more at: [Nature Eye](https://www.nature.com/eye)
 
 ![Nature Eye publication placeholder](/assets/images/natureeye.png)
-*Placeholder image for the Nature Eye publication announcement.*
+*Nature Eye Cover Image*
