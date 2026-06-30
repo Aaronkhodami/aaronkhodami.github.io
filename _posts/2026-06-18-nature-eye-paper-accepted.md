@@ -17,7 +17,9 @@ I am very happy to see this work reach publication, and I hope it can contribute
 
 Many thanks to my supervisor **Luca Battaglini** for his support, guidance, and trust throughout this work.
 
-Read more at: [Nature Eye](https://www.nature.com/eye) or [download it here](/assets/uploads/Khodami%2C%20A.%2C%20Battaglini%2C%20L.%20Temporal%20perceptual%20training%20enhances%20visual%20acuity%20in%20adult%20amblyopia--a%20single-case%20study..pdf)
+Read more at: [Nature Eye](https://www.nature.com/eye) or 
+
+[download it here](/assets/uploads/Khodami%2C%20A.%2C%20Battaglini%2C%20L.%20Temporal%20perceptual%20training%20enhances%20visual%20acuity%20in%20adult%20amblyopia--a%20single-case%20study..pdf)
 
 Cite it as:
 
