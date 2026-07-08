@@ -328,7 +328,13 @@ class EmailObfuscationManager {
 
             const email = `${this.reverseString(userReversed)}@${this.reverseString(domainReversed)}`;
             link.href = `mailto:${email}`;
-            link.textContent = email;
+
+            if (link.querySelector('i')) {
+                link.setAttribute('aria-label', email);
+                link.setAttribute('title', email);
+            } else {
+                link.textContent = email;
+            }
         });
     }
 
