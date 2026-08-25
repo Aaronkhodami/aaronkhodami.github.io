@@ -1,23 +1,23 @@
 ---
 layout: post
-title: "ZotGit v0.0.30 Released"
-date: 2026-04-29 10:00:00 +0100
+title: "ZotGit v0.0.36 Released"
+date: 2026-08-25 10:08:00 +0300
 categories: updates
 tags: [News, Zotero, Open-Source, GitHub, Update]
-excerpt: "ZotGit v0.0.30 is out with optimized caching and improved multi-device synchronization."
+excerpt: "ZotGit v0.0.36 is out with optimized caching and improved multi-device synchronization."
 ---
 
-ZotGit **v0.0.30** is now available.
-
+ZotGit **v0.0.36** is now available.
+This version is updated based on needs to update Zotero to Version 10.*.*
 Following constructive user feedback, I addressed the caching issue related to hardcoded paths. This release includes improvements focused on speed and reliability across devices.
 
-### What's new in v0.0.30
+### What's new in v0.0.36
 
 1. Optimized caching for faster performance.
 2. Improved multi-device synchronization.
 
 ![ZotGit plugin preview](/assets/images/zotgit.jpg)
-*ZotGit update v0.0.30 with improved caching and sync.*
+*ZotGit update v0.0.36 with improved caching and sync.*
 
 The update is available at [ZotGit](https://github.com/Aaronkhodami/ZotGit).
 
