@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "etformat 1.3.0 is Published: A Major Update to EyeLink Eye Tracker Package is Now Live"
+title: "etformat 1.3.0 is Published: A Major Update is Now Live"
 date: 2026-08-29 12:00:00 +0100
 categories: [releases, research, eye-tracking]
 tags: [Python, Eye-Tracking, EDF, Data-Analysis, Open-Source, PyPI, Neuroscience, EyeLink]
@@ -79,20 +79,4 @@ Access comprehensive guides and examples:
 Eye-tracking research continues to expand across cognitive science, neuroscience, usability testing, and clinical diagnostics. Professional-grade analysis tools have traditionally been expensive or proprietary. **etformat 1.3.0** provides researchers with a powerful, open-source alternative that maintains compatibility with the EyeLink ecosystem while enabling reproducible, shareable research workflows.
 
 This major release reflects community feedback and industry best practices in eye-tracking data analysis.
-
-## Get Started Today
-
-1. **Install**: `pip install etformat`
-2. **Learn**: Visit the [documentation](https://aaronkhodami.org/etformat/intro.html)
-3. **Explore**: Check out examples in the [GitHub repository](https://github.com/Aaronkhodami/etformat)
-4. **Contribute**: Submit issues, feature requests, or pull requests on [GitHub](https://github.com/Aaronkhodami/etformat/issues)
-
-## Author & License
-
-**Author**: Mohammad Ahsan Khodami  
-**License**: MIT (Open Source)
-
----
-
-**Have you used etformat in your research? Share your feedback, use cases, or questions in the comments below. I'd love to hear how this tool is advancing eye-tracking science in your field!**
 
