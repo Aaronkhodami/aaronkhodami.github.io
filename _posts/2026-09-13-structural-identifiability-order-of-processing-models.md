@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Structural identifiability of Order-of-Processing models: When do different cognitive architectures generate identical response time distributions"
+title: "A new paper in the journal of Mathematical Psychology is published!"
 date: 2026-09-13 10:00:00 +0100
 categories: updates
 tags: [News, Publication, Mathematical Psychology, Identifiability, OPM]
@@ -22,4 +22,3 @@ The results clarify the inferential scope of OP-model analyses and show when add
 Read the paper here:
 
 - Journal of Mathematical Psychology: [https://www.sciencedirect.com/journal/journal-of-mathematical-psychology](https://www.sciencedirect.com/journal/journal-of-mathematical-psychology)
-- DOI: [https://doi.org/10.1016/j.jmp.2026.103016](https://doi.org/10.1016/j.jmp.2026.103016]
