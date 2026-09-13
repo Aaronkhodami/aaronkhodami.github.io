@@ -22,5 +22,4 @@ The results clarify the inferential scope of OP-model analyses and show when add
 Read the paper here:
 
 - Journal of Mathematical Psychology: [https://www.sciencedirect.com/journal/journal-of-mathematical-psychology](https://www.sciencedirect.com/journal/journal-of-mathematical-psychology)
-- DOI: [https://doi.org/10.1016/j.jmp.2026.103016](https://doi.org/10.1016/j.jmp.2026.103016)
-- PDF: /assets/uploads/structural-identifiability-order-of-processing-models.pdf
+- DOI: [https://doi.org/10.1016/j.jmp.2026.103016](https://doi.org/10.1016/j.jmp.2026.103016]
