@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Extending TVA With Trial-to-Trial Variability in Processing Speed: A Monte Carlo Simulation Study"
+title: "A New paper in the journal of Computational Brain and Behaviour is published"
 date: 2026-10-28 06:00:00 +0100
 categories: updates
 tags: [News, Publication, TVA, Attention, Computational Modeling, Monte Carlo]
